@@ -141,10 +141,12 @@
 <body>
     <div class="container">
         <nav class="product-nav">
-            <button onclick="showProduct(1)" title="Regista"><img src="https://i.hizliresim.com/7uxphds.png" alt="Regista"></button>
-            <button onclick="showProduct(2)" title="DigestaZ"><img src="https://i.hizliresim.com/9gcfldv.png" alt="DigestaZ"></button>
-            <button onclick="showProduct(3)" title="Cocomega"><img src="https://i.hizliresim.com/ibut3pl.png" alt="Cocomega"></button>
-            <button onclick="showProduct(4)" title="Magnesio"><img src="https://i.hizliresim.com/43ee7az.png" alt="Magnesio"></button>
+            <button onclick="showProduct(4)" title="Magnesio"><img src="https://i.hizliresim.com/mq9ayxc.png" alt="Magnesio"></button>
+            <button onclick="showProduct(1)" title="Regista"><img src="https://i.hizliresim.com/1chq29b.png" alt="Regista"></button>
+            <button onclick="showProduct(3)" title="Cocomega"><img src="https://i.hizliresim.com/irb5dev.png" alt="Cocomega"></button>
+            <button onclick="showProduct(2)" title="DigestaZ"><img src="https://i.hizliresim.com/tbqpnts.png" alt="DigestaZ"></button>
+            
+            
         </nav>
         <div class="product-info" id="productInfo">
             <!-- Product information will be dynamically inserted here -->
@@ -161,37 +163,38 @@
     <script>
         const products = [
             { 
+                name: "Magnesio", 
+                description: "Magnesio, vücudunuzun magnezyum ihtiyacını karşılamak için tasarlanmış yüksek emilimli bir takviyedir. Kas ve sinir fonksiyonlarını destekler, kemik sağlığını korur ve enerji üretiminde önemli bir rol oynar.",
+                link: "https://infless.myikas.com/magnesio",
+                videoId: "K4TOrB7at0Y",
+                image: "https://i.hizliresim.com/q208cl7.png",
+                color: "#bea9e4"
+            },
+            { 
                 name: "Regista", 
                 description: "Regista, vücudunuzun doğal detoks süreçlerini desteklemek için formüle edilmiş özel bir karışımdır. Karaciğer sağlığını iyileştirir, toksinlerin atılmasına yardımcı olur ve genel sağlığınızı destekler.",
                 link: "https://infless.myikas.com/regista",
                 videoId: "K4TOrB7at0Y",
-                image: "https://i.hizliresim.com/2p7cw08.png",
+                image: "https://i.hizliresim.com/2s7ubf3.png",
                 color: "#fdb62b"
+            },
+             { 
+                name: "Cocomega", 
+                description: "Cocomega, Omega-3 yağ asitlerinin gücünü hindistan cevizi yağının faydalarıyla birleştiren yenilikçi bir takviyedir. Kalp sağlığını destekler, beyin fonksiyonlarını iyileştirir ve genel sağlığınıza katkıda bulunur.",
+                link: "https://infless.myikas.com/cocomega",
+                videoId: "K4TOrB7at0Y",
+                image: "https://i.hizliresim.com/h7c4rhj.png",
+                color: "#74e1fe"
             },
             { 
                 name: "DigestaZ", 
                 description: "DigestaZ, sindirim sisteminizi desteklemek için özel olarak formüle edilmiş bir enzim kompleksidir. Gıdaların daha iyi sindirilmesine yardımcı olur, şişkinliği azaltır ve genel bağırsak sağlığını iyileştirir.",
                 link: "https://infless.myikas.com/digestaz",
                 videoId: "K4TOrB7at0Y",
-                image: "https://i.hizliresim.com/c6gpitf.png",
+                image: "https://i.hizliresim.com/aq1oc91.png",
                 color: "#91d3a8"
-            },
-            { 
-                name: "Cocomega", 
-                description: "Cocomega, Omega-3 yağ asitlerinin gücünü hindistan cevizi yağının faydalarıyla birleştiren yenilikçi bir takviyedir. Kalp sağlığını destekler, beyin fonksiyonlarını iyileştirir ve genel sağlığınıza katkıda bulunur.",
-                link: "https://infless.myikas.com/cocomega",
-                videoId: "K4TOrB7at0Y",
-                image: "https://i.hizliresim.com/elk4082.png",
-                color: "#74e1fe"
-            },
-            { 
-                name: "Magnesio", 
-                description: "Magnesio, vücudunuzun magnezyum ihtiyacını karşılamak için tasarlanmış yüksek emilimli bir takviyedir. Kas ve sinir fonksiyonlarını destekler, kemik sağlığını korur ve enerji üretiminde önemli bir rol oynar.",
-                link: "https://infless.myikas.com/magnesio",
-                videoId: "K4TOrB7at0Y",
-                image: "https://i.hizliresim.com/nw4rc7v.png",
-                color: "#bea9e4"
             }
+            
         ];
 
         function showProduct(index) {
